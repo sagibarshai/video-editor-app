@@ -1,50 +1,37 @@
-# React + TypeScript + Vite
+EasyVideoTrim
+A simple browser-based video trimming and editing system.
+Installation & Running
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Install project dependencies:
 
-Currently, two official plugins are available:
+bashnpm install
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Run the development server:
 
-## Expanding the ESLint configuration
+bashnpm run dev
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+Navigate to http://localhost:5173 in your browser.
 
-- Configure the top-level `parserOptions` property like this:
 
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
+Note: Make sure port 5173 is available on your machine before starting the project.
 
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
+Key Features
 
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
+Video Playback - Play and pause videos directly in the browser
+Video Trimming - Select start and end points for trimming
+Preview - Watch a preview of the selected segment before saving
+Thumbnails - View thumbnails across the video timeline for easy navigation
 
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
-```
+Usage
+
+The video will load automatically when opening the application
+Use the play/pause button to control video playback
+Drag the trim markers (vertical lines) to select start and end points
+Click "Preview Trim" to watch the selected segment
+The bottom section displays start time, end time, and total duration of the selected segment
+
+Technologies
+
+React + TypeScript
+Vite
+HTML5 Video API
