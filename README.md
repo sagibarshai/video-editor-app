@@ -2,9 +2,9 @@ EasyVideoTrim
 A simple browser-based video trimming and editing system.
 
 
-****Installation & Running
+Installation & Running
 
-****Clone the project:
+Clone the project:
 
 git clone https://github.com/sagibarshai/video-editor-app.git
 cd video-editor-app
@@ -21,18 +21,18 @@ Navigate to http://localhost:5173 in your browser.
 
 Note: Make sure port 5173 is available on your machine before starting the project.
 
-****Key Features
+Key Features:
 
 Video Playback - Play and pause videos directly in the browser
 Video Trimming - Select start and end points for trimming
 Preview - Watch a preview of the selected segment before saving
 Thumbnails - View thumbnails across the video timeline for easy navigation
 
-#Project Structure
+Project Structure
 
 
 
-#Component Overview
+Component Overview:
 
 VideoPlayer: The main container component that manages video state and integrates all sub-components
 VideoActionsButtons: Controls for play, pause, and volume adjustment
