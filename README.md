@@ -1,50 +1,38 @@
-# React + TypeScript + Vite
+# EasyVideoTrim
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A simple browser-based video trimming and editing system.
 
-Currently, two official plugins are available:
+## Installation & Running
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
-
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
-
-- Configure the top-level `parserOptions` property like this:
-
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
+1. Clone the project:
+```bash
+git clone https://github.com/sagibarshai/video-editor-app.git
+cd video-editor-app
 ```
 
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
-
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
-
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
+2. Install project dependencies:
+```bash
+npm install
 ```
+
+3. Run the development server:
+```bash
+npm run dev
+```
+
+4. Navigate to [http://localhost:5173](http://localhost:5173) in your browser.
+
+> **Note:** Make sure port 5173 is available on your machine before starting the project.
+
+## Key Features
+
+- **Video Playback** - Play and pause videos directly in the browser
+- **Video Trimming** - Select start and end points for trimming
+- **Preview** - Watch a preview of the selected segment before saving
+- **Thumbnails** - View thumbnails across the video timeline for easy navigation
+
+## Technologies
+
+- React + TypeScript
+- Vite
+- HTML5 Video API
