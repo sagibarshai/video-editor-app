@@ -7,11 +7,15 @@ A simple browser-based video trimming and editing system.
 Clone the project:
 
 git clone https://github.com/sagibarshai/video-editor-app.git
+
+
 cd video-editor-app
 
 Install project dependencies:ֿ
 
 npm install
+
+
 Run the development server:
 
 npm run dev
