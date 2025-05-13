@@ -32,7 +32,6 @@ Video Trimming - Select start and end points for trimming
 Preview - Watch a preview of the selected segment before saving
 Thumbnails - View thumbnails across the video timeline for easy navigation
 
-**Project Structure:**
 
 
 
