@@ -91,8 +91,9 @@ const VideoPlayer = () => {
         <video 
           ref={videoRef}
           src={"/videos/BigBuckBunny.mp4"} // use a downloaded video from public folder for this project
-          className="video-element"
           onClick={togglePlay}
+          className="video-element"
+
           />
         <div className='video-footer-container'>
         <VideoActionsButtons isPlaying={isPlaying} onTogglePlay={togglePlay} loading={loading} volume={volume} onVolumeChange={handleVolumeChange} />

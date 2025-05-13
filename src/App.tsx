@@ -1,10 +1,8 @@
-import './App.css'
-import VideoPlayer from './components/video/video-player'
+import "./App.css";
+import VideoPlayer from "./components/video/video-player";
 
 const App = () => {
-  return (
-   <VideoPlayer/>
-  )
-}
+  return <VideoPlayer />;
+};
 
-export default App
+export default App;

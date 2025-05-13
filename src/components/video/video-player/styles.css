@@ -54,6 +54,8 @@
     width: 100%;
     display: block;
     cursor: pointer;
+    max-height: 50vh;
+    width: 100%;
 }
 
 .controls-container {
