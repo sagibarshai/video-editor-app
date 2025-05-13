@@ -1,0 +1,28 @@
+.video-timeline-wrapper {
+    display: flex;
+    height: 12px;
+    width: 100%;
+    background-color: #282828;
+    /* youtube timeline background */
+    border-radius: 6px;
+    cursor: pointer;
+    flex: 1
+}
+
+.video-timeline-progress {
+    height: 100%;
+    background-color: #FF0000;
+    /* youtube red */
+    border-radius: 6px;
+    position: relative;
+}
+
+.video-timeline-progress-dot {
+    width: 10px;
+    height: 100%;
+    background-color: #fff;
+    border-radius: 50%;
+    position: absolute;
+    top: 0;
+    right: 0;
+}

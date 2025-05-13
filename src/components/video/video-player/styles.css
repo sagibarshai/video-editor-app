@@ -1,0 +1,114 @@
+.video-player-wrapper {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.video-player-title {
+    color: #FF0000;
+    font-size: 36px;
+    font-weight: 600;
+    margin: 0;
+}
+
+.video-footer-container {
+    margin-top: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: calc(100% - 48px);
+    height: 100%;
+    background-color: transparent;
+    gap: 24px;
+    width: 100%;
+    align-items: start;
+}
+
+.video-time-display {
+    color: white;
+    font-size: 12px;
+    margin: 0;
+}
+
+.video-player-container {
+    width: 50%;
+    height: auto;
+    margin: 0 auto;
+    position: relative;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    padding: 24px;
+    background-color: black;
+}
+
+.video-wrapper {
+    position: relative;
+    width: 100%;
+}
+
+.video-element {
+    width: 100%;
+    display: block;
+    cursor: pointer;
+}
+
+.controls-container {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: linear-gradient(transparent, rgba(0, 0, 0, 0.7));
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    transition: opacity 0.3s;
+}
+
+.video-wrapper:hover .controls-container {
+    opacity: 1;
+}
+
+.play-button {
+    background: none;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+    margin-right: 15px;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.timeline-container {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.timeline-bar {
+    width: 100%;
+    height: 6px;
+    border-radius: 3px;
+    position: relative;
+    cursor: pointer;
+    margin-bottom: 5px;
+}
+
+.timeline-progress {
+    height: 100%;
+    border-radius: 3px;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+.time-display {
+    font-size: 12px;
+    text-align: right;
+}

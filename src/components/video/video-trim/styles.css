@@ -1,0 +1,100 @@
+.trim-bar-container {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+}
+
+.trim-highlight {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    background-color: rgba(255, 255, 255, 0.2);
+    border: 2px dashed white;
+    pointer-events: none;
+    z-index: 1;
+}
+
+.snapshots-bar {
+    display: flex;
+    width: 100%;
+    height: 50px;
+    overflow: hidden;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    gap: 2px;
+    outline: 2px solid white;
+    position: relative;
+}
+
+.loading-snapshots-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+}
+
+.loading-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+}
+
+.snapshot-img {
+    height: 100%;
+    object-fit: cover;
+    flex-shrink: 0;
+    display: block;
+}
+
+.trim-line {
+    position: absolute;
+    height: 50px;
+    width: 10px;
+    background-color: yellow;
+    border-radius: 5px;
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.5);
+    border: 1px solid black;
+    cursor: pointer;
+    cursor: col-resize;
+}
+
+.start {
+    left: 0;
+}
+
+.end {
+    right: 0;
+}
+
+.trim-info {
+    width: 100%;
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-between;
+    font-size: 14px;
+    color: #fff;
+}
+
+.preview-button {
+    padding: 12px;
+    background-color: #FF0000;
+    color: white;
+    font-weight: bolder;
+    border-radius: 5px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.preview-button:focus {
+    outline: none;
+    border: none;
+}
